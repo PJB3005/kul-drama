@@ -22,5 +22,18 @@
             "scopeName": "source.drama",
             "path": "./syntaxes/drama.tmLanguage.json"
         }]
+    },
+    "bugs": {
+        "url": "https://github.com/PJB3005/kul-drama/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/PJB3005/kul-drama.git"
+    },
+    "homepage": "https://github.com/PJB3005/kul-drama",
+    "license": "MIT",
+    "author": {
+        "name": "Pieter-Jan Briers",
+        "url": "https://github.com/PJB3005"
     }
 }
