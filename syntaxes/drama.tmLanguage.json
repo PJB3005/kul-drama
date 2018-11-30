@@ -1,0 +1,150 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "DRAMA",
+	"patterns": [
+		{
+			"include": "#comment"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#opcodes"
+		},
+		{
+			"include": "#registers"
+		},
+		{
+			"include": "#comparisons"
+		},
+		{
+			"include": "#numbers"
+		}
+	],
+	"repository": {
+		"strings": {
+			"name": "string.quoted.double.drama",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.drama",
+					"match": "\\\\."
+				}
+			]
+		},
+		"opcodes": {
+			"patterns": [
+				{
+					"name": "keyword.control.hia.drama",
+					"match": "\\bHIA(?:.[dwai])?\\s"
+				},
+				{
+					"name": "keyword.control.big.drama",
+					"match": "\\bBIG\\s"
+				},
+				{
+					"name": "keyword.control.opt.drama",
+					"match": "\\bOPT(?:.[dwai])?\\s"
+				},
+				{
+					"name": "keyword.control.ver.drama",
+					"match": "\\bVER(?:.[dwai])?\\s"
+				},
+				{
+					"name": "keyword.control.aft.drama",
+					"match": "\\bAFT(?:.[dwai])?\\s"
+				},
+				{
+					"name": "keyword.control.del.drama",
+					"match": "\\bDEL(?:.[dwai])?\\s"
+				},
+				{
+					"name": "keyword.control.mod.drama",
+					"match": "\\bDEL(?:.[dwai])?\\s"
+				},
+				{
+					"name": "keyword.control.hst.drama",
+					"match": "\\bHST\\s"
+				},
+				{
+					"name": "keyword.control.hst.drama",
+					"match": "\\bBST\\s"
+				},
+				{
+					"name": "keyword.control.vgl.drama",
+					"match": "\\bVGL(?:.[dwai])?\\s"
+				},
+				{
+					"name": "keyword.control.spr.drama",
+					"match": "\\bSPR(?:.[di])?\\s"
+				},
+				{
+					"name": "keyword.control.sbr.drama",
+					"match": "\\bSBR(?:.[di])?\\s"
+				},
+				{
+					"name": "keyword.control.vsp.drama",
+					"match": "\\bSPR(?:.[di])?\\s"
+				},
+				{
+					"name": "keyword.control.ktg.drama",
+					"match": "\\bKTG\\s"
+				},
+				{
+					"name": "keyword.control.lez.drama",
+					"match": "\\bLEZ\\s"
+				},
+				{
+					"name": "keyword.control.dru.drama",
+					"match": "\\bDRU\\s"
+				},
+				{
+					"name": "keyword.control.drs.drama",
+					"match": "\\bDRS\\s"
+				},
+				{
+					"name": "keyword.control.nwl.drama",
+					"match": "\\bNWL\\s"
+				},
+				{
+					"name": "keyword.control.stp.drama",
+					"match": "\\bSTP\\s"
+				}
+			]
+		},
+		"comparisons": {
+			"patterns": [
+				{
+					"name": "constant.other.drama",
+					"match": "\\b(SO|GEL|NUL|GRG|NNEG|KLG|NPOS|OVL|GOVL|GR|POS|KL|NEG|NGEL|NNUL|GSO)\\b"
+				}
+			]
+		},
+		"registers": {
+			"patterns": [
+				{
+					"name": "variable.language.register.drama",
+					"match": "\\bR[0-9]\\b"
+				}
+			]
+		},
+		"comment": {
+			"patterns": [
+				{
+					"name": "comment.line.pipe.drama",
+					"match": "\\|.*"
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.drama",
+					"match": "-?\\d+\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.drama"
+}

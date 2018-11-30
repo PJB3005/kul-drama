@@ -1,0 +1,26 @@
+{
+    "name": "kul-drama",
+    "displayName": "KUL-Drama",
+    "description": "Support for the DRAMA programming language used in SOCS at the KU Leuven.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "publisher": "PJB3005",
+    "contributes": {
+        "languages": [{
+            "id": "drama",
+            "aliases": ["DRAMA", "drama"],
+            "extensions": [".dra"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "drama",
+            "scopeName": "source.drama",
+            "path": "./syntaxes/drama.tmLanguage.json"
+        }]
+    }
+}
