@@ -19,6 +19,9 @@
 		},
 		{
 			"include": "#numbers"
+		},
+		{
+			"include": "#macros"
 		}
 	],
 	"repository": {
@@ -110,6 +113,10 @@
 				{
 					"name": "keyword.control.stp.drama",
 					"match": "\\bSTP\\s"
+				},
+				{
+					"name": "keyword.control.resgr.drama",
+					"match": "\\bRESGR\\s"
 				}
 			]
 		},
@@ -142,6 +149,23 @@
 				{
 					"name": "constant.numeric.drama",
 					"match": "-?\\d+\\b"
+				}
+			]
+		},
+		"macros": {
+			"patterns": [
+				{
+					"name": "entity.name.function.macro.drama",
+					"match": "\\b(MACRO|MCREINDE)\\b"
+				},
+				{
+					"name": "variable.other.macro.drama",
+					"begin": "(?<=MACRO)",
+					"end": "\\b\\w+\\b"
+				},
+				{
+					"name": "keyword.other.macro.drama",
+					"match": "\\b(MVGL|MVSP|MSPR|MEVA|MNTS|MFOUT)\\b"
 				}
 			]
 		}
