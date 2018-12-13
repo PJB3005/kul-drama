@@ -2,7 +2,7 @@
     "name": "kul-drama",
     "displayName": "KUL-Drama",
     "description": "Support for the DRAMA programming language used in SOCS at the KU Leuven.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.28.0"
     },
