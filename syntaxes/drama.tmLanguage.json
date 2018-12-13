@@ -85,7 +85,7 @@
 				},
 				{
 					"name": "keyword.control.vsp.drama",
-					"match": "\\bSPR(?:.[di])?\\s"
+					"match": "\\bVSP(?:.[di])?\\s"
 				},
 				{
 					"name": "keyword.control.ktg.drama",
